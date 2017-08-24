@@ -4,7 +4,6 @@ from PyQt5.QtCore import *
 from numpy import *
 import time
 
-
 SIZE = 600
 
 class View(QWidget):
@@ -18,7 +17,6 @@ class View(QWidget):
 		self.ymin = -1.25
 		self.ymax = 1.25
 
-
 		self.maxiter = 250
 
 		self.last = None
@@ -26,7 +24,6 @@ class View(QWidget):
 		arr = self.mandel(SIZE, SIZE, self.maxiter, self.xmin, self.xmax, self.ymin, self.ymax)
 		self.img = self.arrayToImage(arr)
 
-		#Window size
 		self.setMinimumSize(QSize(SIZE, SIZE))
 		self.setMaximumSize(QSize(SIZE, SIZE))
 		self.setWindowTitle("Mandelbrot")
