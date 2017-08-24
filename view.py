@@ -92,15 +92,6 @@ class View(QWidget):
 		return (xNum, yNum)
 
 	def mandel(self, n, m, itermax, xmin, xmax, ymin, ymax):
-
-		'''
-		Fast mandelbrot computation using numpy.
-	 
-		(n, m) are the output image dimensions
-		itermax is the maximum number of iterations to do
-		xmin, xmax, ymin, ymax specify the region of the
-		set to compute.
-		'''    
 		start = time.time()
 
 		ix, iy = mgrid[0:n, 0:m]
