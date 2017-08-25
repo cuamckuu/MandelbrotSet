@@ -1,0 +1,2 @@
+- [ ] Add more sets
+- [ ] Add better zoom
